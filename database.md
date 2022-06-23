@@ -71,6 +71,33 @@ column.setAllowNull(false); // (by default this is set to true)
     TINYINT
 ```
 
+#### Saving and Reading Java Objects
+
+**Reading Objects**
+
+Annotate the constructor in your object that you wish to use with `@DatabaseConstructor` For every parameter in your constructor, you'll need to add a `@Column (INSERT_COLUMN_NAME)` annotation.
+
+```java
+@DatabaseConstructor
+public TestObject(@Column("profileName") String profileName) {
+    // DO SOMETHING
+}
+```
+
+`PLEASE NOTE: Both of these annotations are required. If they aren't included, the framework will throw an exception.`
+
+Great! Now we are ready to actually start reading! Here's how:
+
+```java
+TestObject testObject = (TestObject) db.readObject("INSERT_TABLE", "INSERT_KEY", "INSERT_VALUE", TestObject.class);
+```
+
+**Saving Objects:**
+
+```java
+db.saveObject(testObject, "INSERT_TABLE");
+```
+
 #### Creating a table instance
 
 ```java
@@ -80,7 +107,9 @@ Table table = new Table(
         );
 ```
 
-Primary KeyIf you wish to set a primary key, you can use this:
+* Primary Key
+
+If you wish to set a primary key, you can use this:
 
 ```java
  table.setPrimaryKey("INSERT PRIMARY KEY NAME HERE");
@@ -94,7 +123,7 @@ db.createTable(table);
 
 There you go! You should now have a table inside of your database.
 
-### Transactions _IMPORTANT_
+### Transactions
 
 Before we move on I want to leave an important note. Transactions are an essential part of working on a database and make sure you don't make any errors. Here's how to use them:
 
