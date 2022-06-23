@@ -1,0 +1,17 @@
+# Table of contents
+
+* [Framework Wiki](README.md)
+* [Base64 Serializer](base64-serializer.md)
+* [Commands](commands.md)
+* [Custom Skulls](custom-skulls.md)
+* [Database](database.md)
+* [File Loader](file-loader.md)
+* [GUI](gui.md)
+* [Input Listener](input-listener.md)
+* [Item Builder](item-builder.md)
+* [Item Updater](item-updater.md)
+* [Message](message.md)
+* [Object Cache](object-cache.md)
+* [Packet Based Scoreboard](packet-based-scoreboard.md)
+* [Task Builder](task-builder.md)
+* [Time Utility](time-utility.md)
