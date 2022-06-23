@@ -2,12 +2,10 @@
 description: Welcome to the Framework Wiki, created by Negative Games.
 cover: .gitbook/assets/Banner.png
 coverY: 6.858951811466761
-layout: landing
+layout: editorial
 ---
 
 # Framework Wiki
-
-
 
 {% hint style="success" %}
 ## <mark style="color:green;">**Framework 2.2.0 has released!**</mark>
