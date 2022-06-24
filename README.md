@@ -1,5 +1,5 @@
 ---
-description: Welcome to the Framework Wiki, created by Negative Games.
+description: Welcome to the Framework Wiki. Created by Negative Games.
 cover: .gitbook/assets/Banner.png
 coverY: 6.858951811466761
 ---
