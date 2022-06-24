@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Framework Wiki](README.md)
+* [🏗 Framework Wiki](README.md)
 * [Base64 Serializer](base64-serializer.md)
 * [Commands](commands.md)
 * [Custom Skulls](custom-skulls.md)
