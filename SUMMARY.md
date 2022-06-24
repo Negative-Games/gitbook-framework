@@ -15,3 +15,5 @@
 * [Packet Based Scoreboard](packet-based-scoreboard.md)
 * [Task Builder](task-builder.md)
 * [Time Utility](time-utility.md)
+* [Utilities](utilities/README.md)
+  * [Player Utils](utilities/player-utils.md)
